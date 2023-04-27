@@ -27,6 +27,11 @@
           <a href="./index.html" class="header-logo link">
             Web<span class="logo-span">Studio</span>
           </a>
+          <button  type="button" class="mobile-menu-open" data-menu-open>
+              <svg width="32" height="22" class="mobile-menu-open-icon" >
+                <use href="./images/icons.svg#icon-menu-hamburger"></use>
+              </svg>
+          </button>
           <ul class="header-list list">
             <li class="header-item">
               <a href="./index.html" class="header-link active link">Studio</a>
@@ -54,6 +59,71 @@
           </ul>
         </address>
       </div>
+      <div class="mobile-menu" data-menu>
+        <button type="button" class="mobile-menu_close-btn"  data-menu-close>
+        <svg class="mobile-menu_close-icon" width = "8" height = "8">
+          <use href="./images/icons.svg#icon-modal-close-black"></use>
+        </svg>
+        </button>  
+        <div class="mobile-link">
+          <ul class="mobile-list list">
+          <li class="mobile-item">
+            <a href="./index.html" class="mobile-link link current">Studio</a>
+          </li>
+          <li class="mobile-item">
+            <a href="./portfolio.html" class="mobile-link link">Portfolio</a>
+          </li>
+          <li class="mobile-item">
+            <a href="" class="mobile-link link">Contacts</a>
+          </li>
+          </ul>
+        </div>
+          <div class="mobile-address">
+           <ul class="mobile-address-list list">
+           <li class="mobile-address-item">
+            <a href="tel:+110001111111" class="mobile-address-link link"
+              >+11 (000) 111-11-11</a
+            ></li>
+           <li class="mobile-address-item">               
+              <a href="mailto:info@devstudio.com" class="mobile-email-link link"
+                >info@devstudio.com</a
+              >
+            </li>
+           </ul>
+            <div>
+              <ul class="mobile-social-list list">
+              <li class="mobile-social-item">
+               <a href="" class="mobile-social-link">
+                <svg class="mobile-social-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+              </li>
+              <li class="mobile-social-item">
+              <a href="" class="mobile-social-link">
+                <svg class="mobile-social-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+              </li>
+              <li class="mobile-social-item">
+              <a href="" class="mobile-social-link">
+                <svg class="mobile-social-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+              </li>
+              <li class="mobile-social-item">
+              <a href="" class="mobile-social-link">
+                <svg class="mobile-social-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+              </li>
+              </ul>
+              </div>
+          </div>
+        </div>
     </header>
     <main class="main">
       <section class="hero">
@@ -133,7 +203,7 @@
           <ul class="product-list list">
             <li class="product-item">
               <img
-                src="./images/img1.jpg"
+                src="./images/desctop.jpg"
                 alt="computer"
                 width="360"
                 height="300"
@@ -141,7 +211,7 @@
             </li>
             <li class="product-item">
               <img
-                src="./images/img2.jpg"
+                src="./images/doing-mobile.jpg"
                 alt="telephone"
                 width="360"
                 height="300"
@@ -149,7 +219,7 @@
             </li>
             <li class="product-item">
               <img
-                src="./images/img3.jpg"
+                src="./images/note.jpg"
                 alt="telephone"
                 width="360"
                 height="300"
@@ -163,12 +233,21 @@
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list list">
             <li class="team-item">
-              <img
-                src="./images/person.jpg"
-                alt="person"
-                width="264"
-                height="260"
-              />
+              <picture class="bottom-image">
+                <source 
+                  srcset="./images/mark-guerrero@1x-desktop.jpg 1x, ./images/mark-guerrero@2x-desktop.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source 
+                  srcset="./images/mark-guerrero@1x-tab.jpg 1x, ./images/mark-guerrero@2x-tab.jpg 2x"
+                  media="(min-width: 767px)"
+                  />
+                <source 
+                  srcset="./images/mark-guerrero-mob@1x.jpg 1x, ./images/mark-guerrero-mob@2x.jpg 2x"
+                  media="(min-width: 320px)"
+                  />
+                  <img src="./images/product.jpg" alt="Mark_Guerrero" class="picture-bottom-item" width="264" height="260"/>
+              </picture>
               <div class="team-text-style">
                 <h3 class="team-title-three">Mark Guerrero</h3>
                 <p class="team-paragraph">Product Designer</p>
@@ -205,12 +284,27 @@
               </div >
             </li>
             <li class="team-item">
-              <img
-                src="./images/person2.jpg"
-                alt="person"
+              <picture class="bottom-image">
+                      <source 
+                      srcset="./images/tom-ford@1x-desktop.jpg 1x, ./images/tom-ford@2x-desktop.jpg 2x"
+                      media="(min-width: 1200px)"
+                      /> 
+                      <source 
+                      srcset="./images/tom-ford@1x-tab.jpg 1x, ./images/tom-ford@2x-tab.jpg 2x"
+                      media="(min-width: 768px)"
+                      /> 
+                      <source 
+                      srcset="./images/tom-ford-mob@1x.jpg 1x, ./images/tom-ford-mob@2x.jpg 2x"
+                      media="(min-width: 320px)"
+                      />              
+                    <img src="./images/frontend.jpg" alt="Tom_Ford" class="picture-bottom-item" width="264" height="260"/>
+                  </picture>
+              <!-- <img
+                src="./images/frontend.jpg"
+                alt="frontend"
                 width="264"
                 height="260"
-              />
+              /> -->
               <div class="team-text-style">
                 <h3 class="team-title-three">Tom Ford</h3>
                 <p class="team-paragraph">Frontend Developer</p>
@@ -247,12 +341,27 @@
               </div >
             </li>
             <li class="team-item">
-              <img
-                src="./images/person3.jpg"
-                alt="person"
+              <picture class="bottom-image">
+                <source 
+                  srcset="./images/camila-garcia@1x-desktop.jpg 1x, ./images/camila-garcia@2x-desktop.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source 
+                  srcset="./images/camila-garcia@1x-tab.jpg 1x, ./images/camila-garcia@2x-tab.jpg 2x"
+                  media="(min-width: 767px)"
+                />
+                <source 
+                  srcset="./images/camila-garcia-mob@1x.jpg 1x, ./images/camila-garcia-mob@2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />               
+                <img src="./images/marketing.jpg" alt="Camila_Garcia" class="picture-bottom-item"  width="264" height="260"/>
+              </picture>
+              <!-- <img
+                src="./images/marketing.jpg"
+                alt="person marketing"
                 width="264"
                 height="260"
-              />
+              /> -->
               <div class="team-text-style">
                 <h3 class="team-title-three">Camila Garcia</h3>
                 <p class="team-paragraph">Marketing</p>
@@ -289,12 +398,21 @@
               </div >
             </li>
             <li class="team-item">
-              <img
-                src="./images/person4.jpg"
-                alt="person"
-                width="264"
-                height="260"
-              />
+              <picture class="bottom-image">
+                <source 
+                srcset="./images/daniel-wilson@1x-desktop.jpg 1x, ./images/daniel-wilson@2x-desktop.jpg 2x"
+                media="(min-width: 1200px)"
+                />
+                <source 
+                srcset="./images/daniel-wilson@1x-tab.jpg 1x, ./images/daniel-wilson@2x-tab.jpg 2x"
+                media="(min-width: 768px)"
+                 />
+                <source 
+                srcset="./images/daniel-wilson@1x-mob.jpg 1x, ./images/daniel-wilson@2x-mob.jpg 2x"
+                media="(min-width: 320px)"
+                />  
+                <img src="./images/ui-desinger.jpg" alt=" Daniel_Wilson" class="picture-bottom-item" width="264" height="260"/>
+              </picture>
               <div class="team-text-style">
                 <h3 class="team-title-three">Daniel Wilson</h3>
                 <p class="team-paragraph">UI Designer</p>
@@ -499,5 +617,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
