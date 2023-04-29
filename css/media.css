@@ -857,10 +857,12 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
         width: 100%;
         /* margin-bottom: 72px; */
         padding: 0px 15px 0px 108px;
+        align-items: baseline;
      }
      .footer-wraper{
         display: flex;
         margin-bottom: 72px;
+        
      }
      .footer-box{
          display: flex;
