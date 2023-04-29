@@ -530,7 +530,7 @@ header {
 .footer-social-list {
     display: flex;
     gap: 16px;
-    margin-top: 16px;
+    margin-top: 18px;
 }
 
 .footer-social-item {
