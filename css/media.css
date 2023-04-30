@@ -1016,6 +1016,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
         flex-wrap: wrap;
         justify-content: flex-start;
         width: 100%;
+        align-items: baseline;
      }
     .footer-wraper {
         display: flex;
