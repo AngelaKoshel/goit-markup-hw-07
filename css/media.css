@@ -486,7 +486,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 100%;
+        width: 428px;
         margin: 0 auto;
         padding: 0 15px;
         gap: 72px;
