@@ -777,7 +777,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
          font-weight: 700;
          font-size: 36px;
          line-height: 1.1;
-         text-align: center;
+         text-align: start;
      }
 
      /* Section product*/
@@ -818,7 +818,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
          display: flex;
          flex-wrap: wrap;
          row-gap: 72px;
-         column-gap: 16px;
+         column-gap: 24px;
          justify-content: center
      }
 
@@ -827,7 +827,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
      }
 
      .customers-link {
-         width: 190px;
+         width: 168px;
          height: 88px;
      }
 
@@ -930,6 +930,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
       }
       .feature-list{
         justify-content: center;
+        gap: 0px;
       }
     .feature-item:not(:last-child){
         margin-right: 0px;
